@@ -156,6 +156,7 @@ h1 {
   right: 31px;
 }
 
+
 .left_nav a[class] svg path:not([class]) {
   stroke: #fff;
 }
@@ -167,11 +168,21 @@ h1 {
 .left_nav a[class] .right_arrow path {
   stroke: #fff;
 }
-
+.left_nav a svg path:not([class]) {
+  stroke: #9197B3;
+}
+.left_nav a svg path[class] {
+  fill: #9197B3;
+}
 header {
   position: relative;
 }
-
+.logo_img{
+  font-family: Poppins-Bold;
+  color: #00884F;
+  font-size: 18px;
+  display: none;
+}
 h5, p {
   padding: 0;
   margin: 0;
@@ -251,7 +262,9 @@ header {
     display: flex;
     flex-direction: column;
   }
-
+  .logo_img{
+    display: block;
+  }
   h1 {
     display: none;
   }
