@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WinstonchuCRM</title>
+    <title>WinstonchuCRM :: Статистика</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/analytics.css">
 </head>
-<body>
+<body> 
     <aside class = "crm_nav">
     <a href="index.html">
         <div class="logo">
@@ -114,58 +115,156 @@
     </div>
     <img src="img/chevron-down.svg" class = "user_menu" alt="">
 </div>
-    <h2>Аналитика звонков в автосервисе Геликон</h2>
-    <a href="" class="main_header_button">
-        Перейти к аналитике звонков
-    </a>
+    <form action="" class = "header_datepicker">
+        <div class="date_of_begin">
+            <label for="date">Дата начала: </label>
+            <input type="date" id="date" name="date"/>
+        </div>
+        <div class="date_of_end">
+            <label for="date">Дата окончания: </label>
+            <input type="date" id="date" name="date"/>
+        </div>
+        <input type="submit" class = "submit_date" value="Показать звонки">
+    </form>
 </header>
-    <section class="main_section">
-    <div class="main_section_block">
-        <img src="img/ok_calls.svg" class = "main_block_img" alt="">
-        <div class="main_info">
-            <p class="stat_name">
-                Успешных звонков:
+    <section class="analytics_section">
+    <div class="analytics_second_block">
+        <p class = "analytics_top">Мордкович Павел
+            Валдимирович
+        </p>
+            <p class="a_second_a">
+                Всего принятых звонков: <span>33</span>
             </p>
-            <p class="stat_num">
-                5423
-            </p>
-            <p class="stat_stat">
-                <img src="img/main_up.svg" alt="">
-                <span class = "good">16%</span> за период
-            </p>
-        </div>
+            <div class="stat_block">
+                <p class="a_second_a">
+                    Успешных звонков: <span>36</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat green_back" style="width: 50%;">
+                        50%
+                    </div>
+                </div>
+            </div>
+            <div class="stat_block">
+                <p class="a_second_a">
+                    Слитых звонков: <span>1</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat black_back" style="width: 10%;">
+                        2%
+                    </div>
+                </div>
+            </div>
+            <div class="stat_block"> 
+                <p class="a_second_a">
+                    Ушли думать: <span>33</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat blue_back" style="width: 17%;">
+                        17%
+                    </div>
+                </div>
+            </div>
+            <div class="stat_block">
+                <p class="a_second_a">
+                    Довольных клиентов: <span>908</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat purple_back" style="width: 100%;">
+                        100%
+                    </div>
+                </div>
+            </div>
+            <div class="stat_block">
+                <p class="a_second_a">
+                    Есть замечания: <span>0</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat" style="width: 0%;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="stat_block">
+                <p class="a_second_a">
+                    Замечания критичны: <span>45</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat pink_back" style="width: 70%;">
+                        70%
+                    </div>
+                </div>
+            </div>
     </div>
-    <div class="main_section_block">
-        <img src="img/dis_calls.svg" class = "main_block_img" alt="">
-        <div class="main_info">
-            <p class="stat_name">
-                Слитых звонков:
+    <div class="analytics_second_block">
+        <p class = "analytics_top">Константинов Егор
+            Александрович
+        </p>
+            <p class="a_second_a">
+                Всего принятых звонков: <span>33</span>
             </p>
-            <p class="stat_num">
-                1893
-            </p>
-            <p class="stat_stat">
-                <img src="img/main_down.svg" alt="">
-                <span class = "bad">4%</span> за период
-            </p>
-        </div>
+            <div class="stat_block">
+                <p class="a_second_a">
+                    Успешных звонков: <span>36</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat green_back" style="width: 50%;">
+                        50%
+                    </div>
+                </div>
+            </div>
+            <div class="stat_block">
+                <p class="a_second_a">
+                    Слитых звонков: <span>1</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat black_back" style="width: 10%;">
+                        2%
+                    </div>
+                </div>
+            </div>
+            <div class="stat_block"> 
+                <p class="a_second_a">
+                    Ушли думать: <span>33</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat blue_back" style="width: 17%;">
+                        17%
+                    </div>
+                </div>
+            </div>
+            <div class="stat_block">
+                <p class="a_second_a">
+                    Довольных клиентов: <span>908</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat purple_back" style="width: 100%;">
+                        100%
+                    </div>
+                </div>
+            </div>
+            <div class="stat_block">
+                <p class="a_second_a">
+                    Есть замечания: <span>0</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat" style="width: 0%;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="stat_block">
+                <p class="a_second_a">
+                    Замечания критичны: <span>45</span>
+                </p>
+                <div class="gray_back">
+                    <div class="percent_stat pink_back" style="width: 70%;">
+                        70%
+                    </div>
+                </div>
+            </div>
     </div>
-    <div class="main_section_block">
-        <img src="img/trash.svg" class = "main_block_img" alt="">
-        <div class="main_info">
-            <p class="stat_name">
-                Мусор:
-            </p>
-            <p class="stat_num">
-                3551
-            </p>
-            <p class="stat_stat">
-                <img src="img/main_down.svg" alt="">
-                <span class = "bad">1%</span> за период
-            </p>
-        </div>
-    </div>
-</section>
+</section> 
     <div class="nothing"></div>
 </body>
 </html>

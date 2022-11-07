@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WinstonchuCRM</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/analysis.css">
 </head>
 <body>
     <aside class = "crm_nav">
@@ -114,58 +115,275 @@
     </div>
     <img src="img/chevron-down.svg" class = "user_menu" alt="">
 </div>
-    <h2>Аналитика звонков в автосервисе Геликон</h2>
-    <a href="" class="main_header_button">
-        Перейти к аналитике звонков
-    </a>
+    <form action="" class = "header_datepicker">
+        <div class="date_of_begin">
+            <label for="date">Дата начала: </label>
+            <input type="date" id="date" name="date"/>
+        </div>
+        <div class="date_of_end">
+            <label for="date">Дата окончания: </label>
+            <input type="date" id="date" name="date"/>
+        </div>
+        <input type="submit" class = "submit_date" value="Показать звонки">
+    </form>
 </header>
     <section class="main_section">
-    <div class="main_section_block">
-        <img src="img/ok_calls.svg" class = "main_block_img" alt="">
-        <div class="main_info">
-            <p class="stat_name">
-                Успешных звонков:
-            </p>
-            <p class="stat_num">
-                5423
-            </p>
-            <p class="stat_stat">
-                <img src="img/main_up.svg" alt="">
-                <span class = "good">16%</span> за период
-            </p>
+    <form class="table_filters">
+        <div class="table_filter">
+            <label for="firstname">Номер заказ-наряда: </label>
+            <div class="background_select">
+                <select name="user_profile_color_1">
+                    <option value="1">Все заказы</option>
+                    <option value="2">Заказ 1</option>
+                    <option value="3">Заказ 2</option>
+                    <option value="4">Заказ 3</option>
+                    <option value="5">Заказ 4</option>
+                    <option value="6">Заказ 5</option>
+                </select>
+            </div>
+        </div>
+        <div class="table_filter">
+            <label for="firstname">Мастер: </label>
+            <div class="background_select">
+                <select name="user_profile_color_1">
+                    <option value="1">Все мастера</option>
+                    <option value="2">Мастер 1</option>
+                    <option value="3">Мастер 2</option>
+                    <option value="4">Мастер 3</option>
+                    <option value="5">Мастер 4</option>
+                    <option value="6">Мастер 5</option>
+                </select>
+            </div>
+        </div>
+        <div class="table_filter">
+            <label for="firstname">Подразделения: </label>
+            <div class="background_select">
+                <select name="user_profile_color_1"> 
+                    <option value="1">Все филиалы</option>
+                    <option value="2">Филиал 1</option>
+                    <option value="3">Филиал 2</option>
+                    <option value="4">Филиал 3</option>
+                    <option value="5">Филиал 4</option>
+                    <option value="6">Филиал 5</option>
+                </select>
+            </div>
+        </div>
+        <input type="submit" class = "filter_submit" value="Применить">
+    </form>
+    <div class="table_container">
+        <table class="calls_table">
+            <tr>
+                <th>Номер заказ-наряда</th>
+                <th>Дата и время заказа</th>
+                <th>Клиент</th>
+                <th>Номер телефона</th>
+                <th>Подразделение</th>
+                <th>Мастер</th>
+                <th>Оценка</th>
+                <th class = "big_width_col">Комментарий</th>
+            </tr>
+            <tr>
+                <td class = "order_font_big">ОГА64763524</td>
+                <td class = "order_font_big">03.10.2022  00:00:00</td>
+                <td>Зинкевич Д.И</td>
+                <td class = "order_font_big">+79867654567</td>
+                <td>Автозавод</td>
+                <td>Маясов М.В.</td>
+                <td>Нет замечаний</td>
+                <td class = "big_width_col">Все шикарно</td>
+                <td>
+                    <button class="details_button">
+                        Детали
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class = "order_font_big">ОГА64763524</td>
+                <td class = "order_font_big">03.10.2022  00:00:00</td>
+                <td>Зинкевич Д.И</td>
+                <td class = "order_font_big">+79867654567</td>
+                <td>Автозавод</td>
+                <td>Маясов М.В.</td>
+                <td>Нет замечаний</td>
+                <td class = "big_width_col">Все шикарно</td>
+                <td>                <button class="details_button">
+                    Детали
+                </button></td>
+            </tr>
+            <tr>
+                <td class = "order_font_big">ОГА64763524</td>
+                <td class = "order_font_big">03.10.2022  00:00:00</td>
+                <td>Зинкевич Д.И</td>
+                <td class = "order_font_big">+79867654567</td>
+                <td>Автозавод</td>
+                <td>Маясов М.В.</td>
+                <td>Нет замечаний</td>
+                <td class = "big_width_col">Все шикарно</td>
+                <td>                <button class="details_button">
+                    Детали
+                </button></td>
+            </tr>
+            <tr>
+                <td class = "order_font_big">ОГА64763524</td>
+                <td class = "order_font_big">03.10.2022  00:00:00</td>
+                <td>Зинкевич Д.И</td>
+                <td class = "order_font_big">+79867654567</td>
+                <td>Автозавод</td>
+                <td>Маясов М.В.</td>
+                <td>Нет замечаний</td>
+                <td class = "big_width_col">Все шикарно</td>
+                <td>                <button class="details_button">
+                    Детали
+                </button></td>
+            </tr>
+            <tr>
+                <td class = "order_font_big">ОГА64763524</td>
+                <td class = "order_font_big">03.10.2022  00:00:00</td>
+                <td>Зинкевич Д.И</td>
+                <td class = "order_font_big">+79867654567</td>
+                <td>Автозавод</td>
+                <td>Маясов М.В.</td>
+                <td>Нет замечаний</td>
+                <td class = "big_width_col">Все шикарно</td>
+                <td>                <button class="details_button">
+                    Детали
+                </button></td>
+            </tr>
+            <tr>
+                <td class = "order_font_big">ОГА64763524</td>
+                <td class = "order_font_big">03.10.2022  00:00:00</td>
+                <td>Зинкевич Д.И</td>
+                <td class = "order_font_big">+79867654567</td>
+                <td>Автозавод</td>
+                <td>Маясов М.В.</td>
+                <td>Нет замечаний</td>
+                <td class = "big_width_col">Все шикарно</td>
+                <td>                <button class="details_button">
+                    Детали
+                </button></td>
+            </tr>
+            <tr>
+                <td class = "order_font_big">ОГА64763524</td>
+                <td class = "order_font_big">03.10.2022  00:00:00</td>
+                <td>Зинкевич Д.И</td>
+                <td class = "order_font_big">+79867654567</td>
+                <td>Автозавод</td>
+                <td>Маясов М.В.</td>
+                <td>Нет замечаний</td>
+                <td class = "big_width_col">Все шикарно</td>
+                <td>                <button class="details_button">
+                    Детали
+                </button></td>
+            </tr>
+            <tr>
+                <td class = "order_font_big">ОГА64763524</td>
+                <td class = "order_font_big">03.10.2022  00:00:00</td>
+                <td>Зинкевич Д.И</td>
+                <td class = "order_font_big">+79867654567</td>
+                <td>Автозавод</td>
+                <td>Маясов М.В.</td>
+                <td>Нет замечаний</td>
+                <td class = "big_width_col">Все шикарно</td>
+                <td>                <button class="details_button">
+                    Детали
+                </button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="table_menu">
+        <p class = "table_info">Показано 1-8 из 256 строк</p>
+        <div class="pagination">
+            <div class="back pagination_page">
+                <
+            </div>
+            <div class="pagination_page pagination_active">
+                1
+            </div>
+            <div class="pagination_page">
+                2
+            </div>
+            <div class="pagination_page">
+                3
+            </div>
+            <div class="pagination_page">
+                4
+            </div>
+            <div class="pag_dots">
+                ... 
+            </div>
+            <div class="pagination_page">
+                40
+            </div>
+            <div class="next pagination_page">
+                >
+            </div>
         </div>
     </div>
-    <div class="main_section_block">
-        <img src="img/dis_calls.svg" class = "main_block_img" alt="">
-        <div class="main_info">
-            <p class="stat_name">
-                Слитых звонков:
+    <form class="analysis_section_recieve popup">
+        <div class="analysis_top">
+            <p>
+                Заказ-наряд ОГА000116611
             </p>
-            <p class="stat_num">
-                1893
-            </p>
-            <p class="stat_stat">
-                <img src="img/main_down.svg" alt="">
-                <span class = "bad">4%</span> за период
-            </p>
+            <img src="img/ep_circle-close.svg" class = "close close_this" alt="">
         </div>
-    </div>
-    <div class="main_section_block">
-        <img src="img/trash.svg" class = "main_block_img" alt="">
-        <div class="main_info">
-            <p class="stat_name">
-                Мусор:
-            </p>
-            <p class="stat_num">
-                3551
-            </p>
-            <p class="stat_stat">
-                <img src="img/main_down.svg" alt="">
-                <span class = "bad">1%</span> за период
-            </p>
+        <div class="analytics">
+            <p>Заказ-наряд номер: <span>ОГА000116611</span></p>
+            <p>Дата и время: <span>26.09.2022  22:12:00</span></p> 
+            <p>Клиент: <span>Строганов Артем Павлович</span></p>
+            <p>Подразделение: <span>Федосеенко</span></p>
+            <p>Телефон клиента: <span>+78956745678</span></p>
+            <div class="select_analysis">
+                <label for="firstname">Мастер: </label>
+                <div class="background_select">
+                    <select name="user_profile_color_1">
+                        <option value="1">Маясов Михаил Валерьевич</option>
+                        <option value="2">Мастер 1</option>
+                        <option value="3">Мастер 2</option>
+                        <option value="4">Мастер 3</option>
+                        <option value="5">Мастер 4</option>
+                        <option value="6">Мастер 5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="select_analysis">
+                <label for="firstname">Замечание: </label>
+                <div class="background_select">
+                    <select name="user_profile_color_1">
+                        <option value="1">Нет замечаний</option>
+                        <option value="2">Мастер 1</option>
+                        <option value="3">Мастер 2</option>
+                        <option value="4">Мастер 3</option>
+                        <option value="5">Мастер 4</option>
+                        <option value="6">Мастер 5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="checkboxes"> 
+                <div class="check_left">
+                    <div class="check">
+                        <input type="checkbox" id="scales" name="scales">
+                        <label for="scales">Не звонить!</label>
+                    </div>
+                </div>
+            </div>
+            <div class="textarea_label">
+                Комментарий:
+                <textarea  placeholder="Оставить"></textarea>
+            </div>
+            <div class="form_buttons">
+                <button class="close_but close_this">
+                    Закрыть
+                </button>
+                <input type="submit" class = "send" value="Отправить">
+                <input type="submit" class = "sub_but" value="Сохранить">
+            </div>
         </div>
-    </div>
+    </form>
 </section>
+<div class="background_black"> 
+
+</div>
+<script src="js/code.js"></script>
     <div class="nothing"></div>
 </body>
 </html>

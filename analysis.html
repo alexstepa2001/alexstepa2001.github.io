@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WinstonchuCRM</title>
+    <title>WinstonchuCRM :: Анализ звонков</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/analysis.css">
 </head>
-<body>
+<body> 
     <aside class = "crm_nav">
     <a href="index.html">
         <div class="logo">
@@ -114,58 +115,25 @@
     </div>
     <img src="img/chevron-down.svg" class = "user_menu" alt="">
 </div>
-    <h2>Аналитика звонков в автосервисе Геликон</h2>
-    <a href="" class="main_header_button">
-        Перейти к аналитике звонков
-    </a>
+    <form action="" class = "header_datepicker">
+        <div class="date_of_begin">
+            <label for="date">Дата начала: </label>
+            <input type="date" id="date" name="date"/>
+        </div>
+        <div class="date_of_end">
+            <label for="date">Дата окончания: </label>
+            <input type="date" id="date" name="date"/>
+        </div>
+        <input type="submit" class = "submit_date" value="Показать звонки">
+    </form>
 </header>
-    <section class="main_section">
-    <div class="main_section_block">
-        <img src="img/ok_calls.svg" class = "main_block_img" alt="">
-        <div class="main_info">
-            <p class="stat_name">
-                Успешных звонков:
-            </p>
-            <p class="stat_num">
-                5423
-            </p>
-            <p class="stat_stat">
-                <img src="img/main_up.svg" alt="">
-                <span class = "good">16%</span> за период
-            </p>
-        </div>
-    </div>
-    <div class="main_section_block">
-        <img src="img/dis_calls.svg" class = "main_block_img" alt="">
-        <div class="main_info">
-            <p class="stat_name">
-                Слитых звонков:
-            </p>
-            <p class="stat_num">
-                1893
-            </p>
-            <p class="stat_stat">
-                <img src="img/main_down.svg" alt="">
-                <span class = "bad">4%</span> за период
-            </p>
-        </div>
-    </div>
-    <div class="main_section_block">
-        <img src="img/trash.svg" class = "main_block_img" alt="">
-        <div class="main_info">
-            <p class="stat_name">
-                Мусор:
-            </p>
-            <p class="stat_num">
-                3551
-            </p>
-            <p class="stat_stat">
-                <img src="img/main_down.svg" alt="">
-                <span class = "bad">1%</span> за период
-            </p>
-        </div>
-    </div>
+    <section class="analysis_section">
+
+    
+
+    
 </section>
+
     <div class="nothing"></div>
 </body>
 </html>
