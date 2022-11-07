@@ -12,6 +12,7 @@ h2 {
 }
 
 .main_header_button {
+  justify-self: center;
   padding: 12px 19px;
   font-size: 14px;
   line-height: 100%;
@@ -163,7 +164,8 @@ span {
 @media screen and (max-width: 970px) {
   .main_header {
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .main_header_button {
@@ -173,6 +175,7 @@ span {
 
   h2 {
     margin-bottom: 20px;
+    width: 100%;
   }
 
   .main_section {
@@ -207,6 +210,8 @@ span {
 }
 @media screen and (max-width: 630px) {
   h2 {
-    width: 230px;
+    width: 100%;
+    padding-right: 60px;
+    justify-self: flex-start;
   }
 }
