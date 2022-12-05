@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+    <button class="hamburger hamburger--slider js-menu-toggle" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>  
+    <div class="hamburger_nav">
+        <a href="index.html">Меню</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="contacts.html">Контакты</a>
+    </div>
+    <nav class="header_left">
+        <a href="index.html" class = "logo_a">
+            <div class="logo">
+                <img src="img/Logo_2.svg" alt="Логотип">
+            </div>
+            <a href="index.html">Меню</a>
+            <a href="delivery.html">Доставка</a>
+            <a href="contacts.html">Контакты</a>
+        </a>
+    </nav>
+    <div class="header_right">
+        <a href="tel:+79524443555" target="_blank">+ 7 (952) 444-35-55</a>
+        <a href="tel:+79107990661" target="_blank">+ 7 (910) 799-06-61</a>
+    </div>
+    <a href="tel:+79524443555" target="_blank" class = "mobile_phone">
+        <img src="img/ic_baseline-phone.svg" alt="">
+    </a>
+</header>
+<div class="invisible_object"></div>
+    <section class="contacts_section">
+    <div class="main_menu_block contacts_main_block"> 
+        <div class="main_menu_block_left contacts_left wow fadeInLeft">
+            <h1>
+                Наши<br> <span class = "yellow">контакты</span>
+            </h1>
+            <a href="tel:+79524443555"><img src="img/material-symbols_phone-enabled-outline.svg" alt=""> + 7 (952) 444-35-55</a>
+            <a href="tel:+79107990661"><img src="img/material-symbols_phone-enabled-outline.svg" alt=""> + 7 (910) 799-06-61</a>
+            <a href=""><img src="img/ant-design_whats-app-outlined.svg" alt="">+ 7 (910) 799-06-61</a>
+            <a href=""><img src="img/ic_baseline-telegram.svg" alt="">+ 7 (910) 799-06-61</a>
+            <a href="https://yandex.ru/maps/47/nizhny-novgorod/house/polevaya_ulitsa_9a/YEoYfw5mSkYOQFtsfX5ydHxnZA==/?ll=43.996339%2C56.235041&z=16"><img src="img/material-symbols_location-on-outline-rounded.svg" alt="">Городской округ Нижний Новгород, деревня Ближнеконстантиново, Полевая улица, 9А</a>
+        </div>
+        <div class="main_menu_block_right wow fadeInRight">
+            <div class="main_block_img">
+                <img src="img/phone.png" alt="">
+                <div class="yellow_block">
+
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="map_block wow fadeInUp">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeb764b314792a5aa8e28bb34b6935258930ef937c2a0dfdd152553c921539a53&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe> 
+    </div>
+</section>
+    <footer class="footer wow fadeInUp">
+    <div class="footer_text">
+        Вся информация на сайте не является публичной офертой. Копирование материалов только с разрешения правообладателя.
+    </div>
+</footer>
+    <div class="fast_menu">
+    <a href="">
+        <img src="img/3069742_circle_messenger_round icon_telegram_icon.svg" alt="" class = "fast_icons">
+    </a>
+    <a href="">
+        <img src="img/3225179_app_logo_media_popular_social_icon.svg" alt="" class = "fast_icons">
+    </a>
+    <div class="fast_menu_icon">
+        <img src="img/fast_call.svg" alt="">
+    </div>
+</div>
+<script>
+    const fastMenu = document.querySelector('.fast_menu_icon');
+    const fastIcons = document.querySelectorAll('.fast_icons');
+
+    fastMenu.addEventListener('click', () => {
+        fastIcons[0].classList.toggle('tel_fast_active');
+        fastIcons[1].classList.toggle('wa_fast_active');
+        for(let i = 0; i < fastIcons.length; i++){
+            fastIcons[i].classList.toggle('fast_active');
+        }
+    })
+</script>
+    <div class="cart_icon">
+    <img src="img/cart.svg" alt="">
+    <div class="cart_counter">
+        0
+    </div>
+</div>
+    <div class="cart_menu">
+        <div class="cart_header">
+            Ваш заказ:
+        </div>
+        <div class="cart_items">
+            <div class="cart_item">
+                <div class="cart_item_left">
+                    <div class="cart_item_img">
+                        <img src="img/1.png" alt="">
+                    </div>
+                    Шашлык. Свинина. Шея.
+                </div>
+                <div class="cart_item_right">
+                    <div class="item_counter">
+                        <div class="item_minus">
+                            -
+                        </div>
+                        <div class="item_count">
+                            1
+                        </div>
+                        <div class="item_plus">
+                            +
+                        </div>
+                    </div>
+                    <div class="price">
+                        150р
+                    </div>
+                    <div class="delete_item">
+                        <img src="img/material-symbols_close.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart_item">
+                <div class="cart_item_left">
+                    <div class="cart_item_img">
+                        <img src="img/1.png" alt="">
+                    </div>
+                    Шашлык. Свинина. Шея.
+                </div>
+                <div class="cart_item_right">
+                    <div class="item_counter">
+                        <div class="item_minus">
+                            -
+                        </div>
+                        <div class="item_count">
+                            1
+                        </div>
+                        <div class="item_plus">
+                            +
+                        </div>
+                    </div>
+                    <div class="price">
+                        150р
+                    </div>
+                    <div class="delete_item">
+                        <img src="img/material-symbols_close.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nothing">
+            <div class="full_cost">
+                Итого: 300р
+            </div>
+        </div>
+        <form action="" class="order_form">
+            <input type="text" name="name" id="" placeholder="ФИО" required>
+            <input type="tel" name="phone" id="" placeholder="Телефон" required>
+            <input type="text" name="location" id="" placeholder="Адрес доставки" required>
+            <input type="text" name="comment" id="" placeholder="Комментарий" required>
+            <p>Выберите тип доставки:</p>
+            <select name="" required>
+                <option disabled>Выберите тип доставки</option>
+                <option value="Самовывоз">Самовывоз</option>
+                <option value="Доставка курьером">Доставка курьером</option>
+            </select>
+            <p>Форма оплаты</p>
+            <select name="" required>
+                <option disabled>Форма оплаты</option>
+                <option value="Самовывоз">Наличными</option>
+                <option value="Доставка курьером">Переводом на карту</option>
+            </select>
+            <p class = "pol">Нажимая кнопку “Сделать заказ” Вы автоматически соглашайтесь с <a href="">Политикой конфиденциальности</a></p>
+            <input type="submit" value="Сделать заказ" class = "submit_order">
+        </form>
+    </div>
+    <div class="cart_popup"></div>
+<script src="js/cart.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+</html>
